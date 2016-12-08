@@ -1,0 +1,16 @@
+{
+  "name": "Mamafih",
+  "version": "1.0.0",
+  "description": "Mamafih .NET Core Web Site Management Tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-rename": "^1.2.2"
+  }
+}
