@@ -6,9 +6,7 @@ Mamafih is a management tool for .NET Core Web Sites
 
 First you need to install nodejs
 
-```
-https://nodejs.org/en/
-```
+[nodejs](https://nodejs.org/en/)
 
 ### Installing
 
