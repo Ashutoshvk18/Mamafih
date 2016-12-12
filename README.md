@@ -13,6 +13,10 @@ First you need to install nodejs
 After install nodejs you can clone and run the app by following steps
 
 ```
+git clone https://github.com/ilysorc/Mamafih.git
+```
+
+```
 npm install
 ```
 
