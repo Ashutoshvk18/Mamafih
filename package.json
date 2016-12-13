@@ -1,13 +1,13 @@
 {
-  "name": "mamafih",
-  "version": "1.0.0",
-  "description": "Mamafih .NET Core Web Site Management Tool",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "electron": "^1.4.1",
-    "bower": "^1.8.0"
-  }
+    "name": "mamafih",
+    "version": "1.0.0",
+    "description": "Mamafih .NET Core Web Site Management Tool",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "bower": "^1.8.0",
+        "electron": "^1.4.1"
+    }
 }

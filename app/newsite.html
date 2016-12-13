@@ -2,44 +2,45 @@
 <html>
 
 <head>
-    <title>Mamafih</title>
+    <title>Mamafih - New Site</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./bower_components/photon/dist/css/photon.css">
+    <link rel="stylesheet" href="../bower_components/photon/dist/css/photon.css">
 
-    <!-- Electron Javascript -->
-    <script src="main.js" charset="utf-8"></script>
+    <!-- jQuery -->
+    <script src="../bower_components/jq/dist/jquery.js" charset="utf-8"></script>
+
+    <!-- jQuery -->
+    <script src="./js/common.js" charset="utf-8"></script>
+
 </head>
 
+
 <body>
+
+
     <div class="window">
         <div class="window-content">
             <div class="pane-group">
                 <div class="pane-sm sidebar">
                     <nav class="nav-group">
-                        <h5 class="nav-group-title">Favorites</h5>
-                        <a class="nav-group-item active">
-                            <span class="icon icon-home"></span> connors
+                        <h5 class="nav-group-title">Preferences</h5>
+                        <a class="nav-group-item" onclick="getPage('home')">
+                            <span class="icon icon-home"></span> Home
                         </a>
-                        <span class="nav-group-item">
-    <span class="icon icon-download"></span> Downloads
+                        <span class="nav-group-item active">
+    <span class="icon icon-plus-squared"></span> New Site
                         </span>
                         <span class="nav-group-item">
-    <span class="icon icon-folder"></span> Documents
+    <span class="icon icon-globe"></span> Sites
                         </span>
                         <span class="nav-group-item">
-    <span class="icon icon-signal"></span> AirPlay
-                        </span>
-                        <span class="nav-group-item">
-    <span class="icon icon-print"></span> Applications
-                        </span>
-                        <span class="nav-group-item">
-    <span class="icon icon-cloud"></span> Desktop
+    <span class="icon icon-attention"></span> Logs
                         </span>
                     </nav>
                 </div>
                 <div class="pane">
-                    <form style="padding-left:20px">
+                    <form>
                         <div class="form-group">
                             <label>Email address</label>
                             <input type="email" class="form-control" placeholder="Email">
