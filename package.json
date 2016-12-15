@@ -6,9 +6,9 @@
     "scripts": {
         "start": "electron ."
     },
-    "devDependencies": {
+    "devDependencies": {},
+    "dependencies": {
         "bower": "^1.8.0",
         "electron": "^1.4.1"
-    },
-    "dependencies": {}
+    }
 }
