@@ -1,40 +1,31 @@
-const electron = require('electron')
-const path = require('path')
-const url = require('url')
-const ipc = electron.ipcMain
+const electron = require('electron');
+const path = require('path');
+const url = require('url');
 
-const app = electron.app
+const app = electron.app;
 
-const browserWindow = electron.BrowserWindow
+const browserWindow = electron.BrowserWindow;
 
-let mainWindow
+let mainWindow;
 
 function createWindow() {
-    mainWindow = new browserWindow({ width: 800, height: 600, show: false })
+    mainWindow = new browserWindow({ width: 900, height: 700, show: false });
 
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, '/app/home.html'),
+        pathname: path.join(__dirname, './index.html'),
         protocol: 'file:',
         slashes: true
-    }))
+    }));
 
     mainWindow.once('ready-to-show', () => {
-        mainWindow.show()
-    })
+        mainWindow.show();
+    });
 
-    //mainWindow.webContents.openDevTools()
+    //mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function() {
         mainWindow = null
-    })
+    });
 }
 
-app.on('ready', createWindow)
-
-ipc.on('changePage', (event, pageName) => {
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, '/app/' + pageName + '.html'),
-        protocol: 'file:',
-        slashes: false
-    }))
-})
+app.on('ready', createWindow);

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mamafih - Home</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./bower_components/photon/dist/css/photon.css">
+
+    <script src="./bower_components/jq/dist/jquery.min.js"></script>
+    <script>
+        window.jQuery = window.$ = typeof module === 'object' ? module.exports : jQuery
+    </script>
+
+    <!-- js libraries -->
+    <script src="./bower_components/jq/dist/jquery.js" charset="utf-8"></script>
+    <script src="./app/js/common.js" charset="utf-8"></script>
+    <script src="./app/js/sites.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="window">
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Preferences</h5>
+                        <a class="nav-group-item active" onclick="changePage('home')" id="home">
+                            <span class="icon icon-home menu-item" id="home"></span> Home
+                        </a>
+                        <span class="nav-group-item" onclick="changePage('newsite')" id="newsite">
+    <span class="icon icon-plus-squared menu-item"></span> New Site
+                        </span>
+                        <span class="nav-group-item" onclick="changePage('sites')" id="sites">
+    <span class="icon icon-globe menu-item"></span> Sites
+                        </span>
+                        <span class="nav-group-item" onclick="changePage('logs')" id="logs">
+    <span class="icon icon-attention menu-item"></span> Logs
+                        </span>
+                    </nav>
+                </div>
+                <div class="pane padded-more">
+                    <webview id="content" src="./app/home.html"></webview>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

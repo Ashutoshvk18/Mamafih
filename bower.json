@@ -1,9 +1,9 @@
 {
     "name": "front",
     "version": "0.0.0",
-    "dependencies": {
+    "devDependencies": {
         "photon": "latest",
         "jq": "latest"
     },
-    "devDependencies": {}
+    "dependencies": {}
 }
