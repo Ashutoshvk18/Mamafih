@@ -46,3 +46,6 @@ bower_components
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Database files
+data_stores

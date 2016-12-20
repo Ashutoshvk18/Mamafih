@@ -1,6 +1,7 @@
 const electron = require('electron');
 const path = require('path');
 const url = require('url');
+var newsite = require(path.join(__dirname, './app/js/newsite.js'));
 
 const app = electron.app;
 
@@ -21,7 +22,7 @@ function createWindow() {
         mainWindow.show();
     });
 
-    //mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function() {
         mainWindow = null
