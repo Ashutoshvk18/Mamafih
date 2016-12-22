@@ -1,7 +1,6 @@
-const path = require('path');
 var DataStore = require('nedb');
 
-var db = new DataStore({ filename: path.join(__dirname, '../../data_stores/logs.db') });
+var db = new DataStore({ filename: './data_stores/logs.db' });
 
 db.loadDatabase();
 

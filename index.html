@@ -5,15 +5,13 @@
     <title>Mamafih - Home</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./bower_components/photon/dist/css/photon.css">
+    <link rel="stylesheet" href="bower_components/photon/dist/css/photon.css">
 
-    <!-- js libraries -->
-    <script src="./bower_components/jq/dist/jquery.js" charset="utf-8"></script>
-    <script>
-        window.jQuery = window.$ = typeof module === 'object' ? module.exports : jQuery
-    </script>
-    <script src="./app/js/common.js" charset="utf-8"></script>
-    <script src="./app/js/sites.js" charset="utf-8"></script>
+    <!-- sections -->
+    <link rel="import" href="sections/home.html">
+    <link rel="import" href="sections/newsite.html">
+    <link rel="import" href="sections/sites.html">
+    <link rel="import" href="sections/logs.html">
 
 </head>
 
@@ -24,26 +22,29 @@
                 <div class="pane-sm sidebar">
                     <nav class="nav-group">
                         <h5 class="nav-group-title">Preferences</h5>
-                        <a class="nav-group-item active" onclick="changePage('home')" id="home">
-                            <span class="icon icon-home menu-item" id="home"></span> Home
+                        <a class="nav-group-item" id="home" data-section="home">
+                            <span class="icon icon-home menu-item"></span> Home
                         </a>
-                        <span class="nav-group-item" onclick="changePage('newsite')" id="newsite">
+                        <span class="nav-group-item" id="newsite" data-section="newsite">
     <span class="icon icon-plus-squared menu-item"></span> New Site
                         </span>
-                        <span class="nav-group-item" onclick="changePage('sites')" id="sites">
+                        <span class="nav-group-item" id="sites" data-section="sites">
     <span class="icon icon-globe menu-item"></span> Sites
                         </span>
-                        <span class="nav-group-item" onclick="changePage('logs')" id="logs">
+                        <span class="nav-group-item" id="logs" data-section="logs">
     <span class="icon icon-attention menu-item"></span> Logs
                         </span>
                     </nav>
                 </div>
                 <div class="pane padded-more">
-                    <webview id="content" src="./app/home.html"></webview>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        require('./app/imports');
+        require('./app/nav');
+    </script>
 </body>
 
 </html>

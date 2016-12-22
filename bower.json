@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "devDependencies": {},
     "dependencies": {
-        "photon": "latest",
-        "jq": "latest"
+        "photon": "latest"
     }
 }
